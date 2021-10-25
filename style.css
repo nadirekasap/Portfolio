@@ -1,0 +1,214 @@
+/* Tasarımda sonradan engel olmaması için tüm kenarlarımı sıfırladım.*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+*, /*Tüm etiketler*/
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+*:not([class^="fa"]) {
+    font-family: 'Poppins','Birthstone' sans-serif !important;
+    }
+
+a,
+a:link,
+a:visited{
+    text-decoration: none; /*Altı çizili istemiyorum*/
+    outline: none; /*Üstüne basıldığında etiketten gelen kenarlıkları istemiyorum*/
+    border: none;
+}
+
+ul,
+li{
+    list-style: none; /* Liste olduğunu belirlten nokta vs. onları istemiyorum*/
+    margin: 0;
+    padding: 0;
+}
+
+section,
+span,
+p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+/* Bu kalıbı her zaman kullanabiliriz -Resetleme Kodları*/
+ /* HEADER START */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    background-image: url(img/main.jpg);
+    background-position: center; /*ortala*/
+    background-size: cover; /* kapla*/
+    background-attachment: fixed; /*sabit kal*/
+    height: 100vh; /*tüm ekran boyutunu kapla , responsive (tablet vs de kaplr) */
+
+}
+.header-navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /* birbirinden ayıracağım*/
+    padding: 40px 0;
+    
+}
+.header-logo{
+    font-size: 16px;
+    letter-spacing: 2px; /*harfler arasında boşluk */
+    border-bottom: 2px solid #000;
+    border-radius: 1px;
+    padding-bottom: 5px;
+}
+ul{
+    display:flex; /*navbarı sağa yan yana aldık*/
+}
+li{
+    margin-left: 27px; /*aralarına boşluk verdik*/
+}
+a{  
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+.header-text{
+    position:absolute; /* sayesinde top,left,right buttom değerleri verebileceğim. */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%); /*X koordinatında hizala (sayfamın tam ortasına alacağım) */ 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  /* yan yana hizalılardı şimdi sütun olarak hizaladık. */
+}
+h1{
+    font-size: 5.0rem;
+    font-weight: 50; /* ince yapıda yapacağım*/
+    line-height: 0.4; /*satır boşluğu */
+    letter-spacing: 2px; /*harfler arası boşluk*/
+    font-family: 'Birthstone', cursive;
+    color:black;
+}
+.first-letter{
+    font-size:7.5rem ; /*W daha büyük olsun istedim. */
+    font-weight: 50;
+    font-family: 'Birthstone', cursive;
+    color:black;
+}
+/* HEADER END */
+
+/*HAKKIMDA START*/
+.about{
+    margin-bottom: 150px;
+}
+.about-tittle{
+    margin: 60px 0;
+
+}
+.about-tittle h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #577157;
+    font-size: 30px;
+    font-weight: 600;  /* biraz kalınlaştırdım */
+}
+.about-tittle h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #6d4c41;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.about-content {
+    display: flex;
+    align-items: center;/*yatayda hizaladım */
+    justify-content: space-around;/*yazı ve görseli ayırdık*/
+}
+.about-img {
+  width: 40%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*görselin en boy oranını koruyarak bir yerleşim sağladık.  */ 
+}
+.about-text {
+    width:40%;
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center; /*başlığımı hizaladım */
+    font-size: 60px;
+    color: #577157;
+    font-family: 'Birthstone', cursive;
+    letter-spacing: 0.5rem; /*harfler arası boşluk */
+    font-weight: 100; /*incelttim */
+}
+#mug{
+    color: #577157;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.about-text p{  /*about text altındaki p etiketi */
+    font-size:15px;
+    text-align: center;
+    color:#2c2727;
+
+}
+/* HAKKIMDA END*/  
+
+/*FOOTER START*/
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #577157;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #222c22;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px; 
+}
+.footer{
+    background-color: #ced6ce;
+}
+.footer-copyright{
+    color:black;
+    text-align: center;
+    flex-basis: 50%; /* 55%'lik alan verdim */
+    line-height: 2; /*satır boşluğu*/
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-social i{
+    color: black;
+    margin-bottom: 50px;
+    font-size: 25px;
+    padding: 0 40px;
+}
+.footer-social:first-child{
+    margin-left: 70px;
+}
+/*FOOTER END*/
