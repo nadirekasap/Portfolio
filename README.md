@@ -1,2 +1,2 @@
-#Portfolyo Deneme
+Portfolyo Deneme
 ## Portfolyo sitesi deneme çalışmasıdır.
