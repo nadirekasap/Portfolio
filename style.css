@@ -1,7 +1,7 @@
 /* Tasarımda sonradan engel olmaması için tüm kenarlarımı sıfırladım.*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
 *, /*Tüm etiketler*/
 *::before,
 *::after{
@@ -88,17 +88,17 @@ a{
     flex-direction: column;  /* yan yana hizalılardı şimdi sütun olarak hizaladık. */
 }
 h1{
-    font-size: 5.0rem;
+    font-size: 8.0rem;
     font-weight: 50; /* ince yapıda yapacağım*/
     line-height: 0.4; /*satır boşluğu */
     letter-spacing: 2px; /*harfler arası boşluk*/
-    font-family: 'Birthstone', cursive;
+    font-family: 'Herr Von Muellerhoff', cursive;
     color:black;
 }
 .first-letter{
-    font-size:7.5rem ; /*W daha büyük olsun istedim. */
+    font-size:10.5rem ; /*W daha büyük olsun istedim. */
     font-weight: 50;
-    font-family: 'Birthstone', cursive;
+    font-family: 'Herr Von Muellerhoff', cursive;
     color:black;
 }
 /* HEADER END */
@@ -147,7 +147,7 @@ h1{
 h4{
     margin-bottom: 25px;
     text-align: center; /*başlığımı hizaladım */
-    font-size: 60px;
+    font-size: 25px;
     color: #577157;
     font-family: 'Birthstone', cursive;
     letter-spacing: 0.5rem; /*harfler arası boşluk */
