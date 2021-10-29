@@ -1,8 +1,8 @@
-/* Tasarımda sonradan engel olmaması için tüm kenarlarımı sıfırladım.*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
-*, /*Tüm etiketler*/
+*, 
 *::before,
 *::after{
     margin: 0;
@@ -17,14 +17,14 @@
 a,
 a:link,
 a:visited{
-    text-decoration: none; /*Altı çizili istemiyorum*/
-    outline: none; /*Üstüne basıldığında etiketten gelen kenarlıkları istemiyorum*/
+    text-decoration: none; 
+    outline: none; 
     border: none;
 }
 
 ul,
 li{
-    list-style: none; /* Liste olduğunu belirlten nokta vs. onları istemiyorum*/
+    list-style: none; 
     margin: 0;
     padding: 0;
 }
@@ -37,8 +37,7 @@ p{
     outline: none;
     border: none;
 }
-/* Bu kalıbı her zaman kullanabiliriz -Resetleme Kodları*/
- /* HEADER START */
+
 .container{
     max-width: 1170px;
     margin: 0 auto;
@@ -46,31 +45,31 @@ p{
 }
 .header{
     background-image: url(img/main.jpg);
-    background-position: center; /*ortala*/
-    background-size: cover; /* kapla*/
-    background-attachment: fixed; /*sabit kal*/
-    height: 100vh; /*tüm ekran boyutunu kapla , responsive (tablet vs de kaplr) */
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 100vh; 
 
 }
 .header-navbar{
     display:flex;
     align-items: center;
-    justify-content: space-between; /* birbirinden ayıracağım*/
+    justify-content: space-between; 
     padding: 40px 0;
     
 }
 .header-logo{
     font-size: 16px;
-    letter-spacing: 2px; /*harfler arasında boşluk */
+    letter-spacing: 2px; 
     border-bottom: 2px solid #000;
     border-radius: 1px;
     padding-bottom: 5px;
 }
 ul{
-    display:flex; /*navbarı sağa yan yana aldık*/
+    display:flex; 
 }
 li{
-    margin-left: 27px; /*aralarına boşluk verdik*/
+    margin-left: 27px; 
 }
 a{  
     color: #000;
@@ -78,32 +77,32 @@ a{
     font-size: 15px;
 }
 .header-text{
-    position:absolute; /* sayesinde top,left,right buttom değerleri verebileceğim. */
+    position:absolute; 
     top: 50%;
     left: 50%;
-    transform: translateX(-50%); /*X koordinatında hizala (sayfamın tam ortasına alacağım) */ 
+    transform: translateX(-50%); 
     display:flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;  /* yan yana hizalılardı şimdi sütun olarak hizaladık. */
+    flex-direction: column;  
 }
 h1{
     font-size: 8.0rem;
-    font-weight: 50; /* ince yapıda yapacağım*/
-    line-height: 0.4; /*satır boşluğu */
-    letter-spacing: 2px; /*harfler arası boşluk*/
+    font-weight: 50; 
+    line-height: 0.4; 
+    letter-spacing: 2px; 
     font-family: 'Herr Von Muellerhoff', cursive;
     color:black;
 }
 .first-letter{
-    font-size:10.5rem ; /*W daha büyük olsun istedim. */
+    font-size:10.5rem ; 
     font-weight: 50;
     font-family: 'Herr Von Muellerhoff', cursive;
     color:black;
 }
 /* HEADER END */
 
-/*HAKKIMDA START*/
+/*ABOUT US START*/
 .about{
     margin-bottom: 150px;
 }
@@ -117,7 +116,7 @@ h1{
     margin: 0 auto;
     color: #577157;
     font-size: 30px;
-    font-weight: 600;  /* biraz kalınlaştırdım */
+    font-weight: 600;  
 }
 .about-tittle h2::after{
     content: "";
@@ -130,8 +129,8 @@ h1{
 }
 .about-content {
     display: flex;
-    align-items: center;/*yatayda hizaladım */
-    justify-content: space-around;/*yazı ve görseli ayırdık*/
+    align-items: center;
+    justify-content: space-around;
 }
 .about-img {
   width: 40%;
@@ -139,32 +138,32 @@ h1{
 .about-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover; /*görselin en boy oranını koruyarak bir yerleşim sağladık.  */ 
+    object-fit: cover; 
 }
 .about-text {
     width:40%;
 }
 h4{
     margin-bottom: 25px;
-    text-align: center; /*başlığımı hizaladım */
+    text-align: center;
     font-size: 25px;
     color: #577157;
     font-family: 'Birthstone', cursive;
-    letter-spacing: 0.5rem; /*harfler arası boşluk */
-    font-weight: 100; /*incelttim */
+    letter-spacing: 0.5rem; 
+    font-weight: 100; 
 }
 #mug{
     color: #577157;
     margin-bottom: 25px;
     text-align: center;
 }
-.about-text p{  /*about text altındaki p etiketi */
+.about-text p{  
     font-size:15px;
     text-align: center;
     color:#2c2727;
 
 }
-/* HAKKIMDA END*/  
+/* ABOUT US END*/  
 
 /*FOOTER START*/
 .footer h2{
@@ -191,8 +190,8 @@ h4{
 .footer-copyright{
     color:black;
     text-align: center;
-    flex-basis: 50%; /* 55%'lik alan verdim */
-    line-height: 2; /*satır boşluğu*/
+    flex-basis: 50%; 
+    line-height: 2; 
     font-size: 13px;
     margin-bottom: 20px;
 }
